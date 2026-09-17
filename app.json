@@ -4,7 +4,7 @@
     "slug": "MAD",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/jonah_hill_pizzeria.png",
     "scheme": "mad",
     "userInterfaceStyle": "light",
     "plugins": ["expo-router"],
@@ -13,14 +13,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#FFF6E9",
+        "foregroundImage": "./assets/jonah_hill_pizzeria.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/jonah_hill_pizzeria.png"
     }
   }
 }

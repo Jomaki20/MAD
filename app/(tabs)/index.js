@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 const RED = '#8C1C13';
 const YELLOW = '#F6D776';
@@ -12,7 +12,11 @@ export default function HomeScreen() {
 
   return (
     <View style={[styles.container, { backgroundColor }]}>
-      <Text style={styles.emoji}>🍕</Text>
+      <Image
+        source={require('../../assets/jonah_hill_pizzeria.png')}
+        style={styles.logo}
+        resizeMode="contain"
+      />
       <Text style={[styles.text, { color: textColor }]}>
         Benvenuti a tutti nella mia pizzeria! Sono Jonah Hill e ti servirò
         come meglio posso.
@@ -37,8 +41,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 32,
   },
-  emoji: {
-    fontSize: 64,
+  logo: {
+    width: 180,
+    height: 180,
     marginBottom: 24,
   },
   text: {
